@@ -71,5 +71,4 @@ Testing/
 
 # zed
 .clangd
-._cmake_systeminformation
-DontPush/
+__cmake_systeminformation/
