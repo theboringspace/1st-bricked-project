@@ -1,0 +1,2 @@
+CompileFlags:
+  Add: [-Ithirdparty/raylib/include, -std=c++23]
