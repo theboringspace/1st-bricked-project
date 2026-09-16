@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(RaylibTemplate LANGUAGES C CXX)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -122,7 +124,10 @@ else()
     message(FATAL_ERROR "This template currently supports Windows, macOS, and Linux only.")
 endif()
 
-add_executable(RaylibTemplate "main.cpp")
+add_executable(RaylibTemplate
+  src/main.cpp
+  src/Ball.cpp
+  src/CollisionHandler.cpp)
 #add_executable(RaylibTemplate "reference/01.cpp")
 #add_executable(RaylibTemplate "reference/02.cpp")
 #add_executable(RaylibTemplate "reference/03.cpp")
@@ -137,3 +142,8 @@ if(WIN32)
             "$<TARGET_FILE_DIR:RaylibTemplate>"
     )
 endif()
+
+# Added Stuff
+target_include_directories(RaylibTemplate PUBLIC
+    include
+)

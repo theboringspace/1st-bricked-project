@@ -1,2 +1,2 @@
 CompileFlags:
-  Add: [-Ithirdparty/raylib/include, -std=c++23]
+  CompilationDatabase: build-clangd

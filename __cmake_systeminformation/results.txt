@@ -104,7 +104,7 @@ CMAKE_AUTOMOC_COMPILER_PREDEFINES "ON"
 CMAKE_AUTOMOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE;Q_NAMESPACE_EXPORT"
 CMAKE_AUTOMOC_PATH_PREFIX "OFF"
 CMAKE_BASE_NAME "cl"
-CMAKE_BINARY_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+CMAKE_BINARY_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 CMAKE_BUILD_TOOL "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe"
 CMAKE_BUILD_TYPE_INIT "Debug"
 CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert"
@@ -133,10 +133,10 @@ CMAKE_CONFIGURATION_TYPES "Debug;Release;MinSizeRel;RelWithDebInfo"
 CMAKE_CPACK_COMMAND "C:/Program Files/CMake/bin/cpack.exe"
 CMAKE_CROSSCOMPILING "FALSE"
 CMAKE_CTEST_COMMAND "C:/Program Files/CMake/bin/ctest.exe"
-CMAKE_CURRENT_BINARY_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
-CMAKE_CURRENT_LIST_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
-CMAKE_CURRENT_LIST_FILE "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation/CMakeLists.txt"
-CMAKE_CURRENT_SOURCE_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+CMAKE_CURRENT_BINARY_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
+CMAKE_CURRENT_LIST_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
+CMAKE_CURRENT_LIST_FILE "C:/Club_code/1st-bricked-project/__cmake_systeminformation/CMakeLists.txt"
+CMAKE_CURRENT_SOURCE_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_attributes;cxx_auto_type;cxx_constexpr;cxx_decltype;cxx_decltype_incomplete_return_types;cxx_default_function_template_args;cxx_defaulted_functions;cxx_defaulted_move_initializers;cxx_delegating_constructors;cxx_deleted_functions;cxx_enum_forward_declarations;cxx_explicit_conversions;cxx_extended_friend_declarations;cxx_extern_templates;cxx_final;cxx_func_identifier;cxx_generalized_initializers;cxx_inheriting_constructors;cxx_inline_namespaces;cxx_lambdas;cxx_local_type_template_args;cxx_long_long_type;cxx_noexcept;cxx_nonstatic_member_init;cxx_nullptr;cxx_override;cxx_range_for;cxx_raw_string_literals;cxx_reference_qualified_functions;cxx_right_angle_brackets;cxx_rvalue_references;cxx_sizeof_member;cxx_static_assert;cxx_strong_enums;cxx_thread_local;cxx_trailing_return_types;cxx_unicode_literals;cxx_uniform_initialization;cxx_unrestricted_unions;cxx_user_literals;cxx_variadic_macros;cxx_variadic_templates"
 CMAKE_CXX11_EXTENSION_COMPILE_OPTION ""
 CMAKE_CXX11_STANDARD_COMPILE_OPTION ""
@@ -577,9 +577,9 @@ CMAKE_CXX_COMPILER_LOADED "1"
 CMAKE_CXX_COMPILER_NAMES "c++"
 CMAKE_CXX_COMPILER_PRODUCED_FILES "CompilerIdCXX.exe;CompilerIdCXX.vcxproj"
 CMAKE_CXX_COMPILER_PRODUCED_OUTPUT "MSBuild version 18.8.2+ce25c0108 for .NET Framework
-Build started 9/11/2026 6:45:09 PM.
+Build started 9/15/2026 6:04:34 PM.
 
-Project "C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+Project "C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -595,9 +595,9 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\vcpkg\installed\x64-windows\lib" /LIBPATH:"C:\vcpkg\installed\x64-windows\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.exe
 AppLocalFromInstalled:
-  "C:\vcpkg\vcpkg.exe" z-applocal --target-binary="C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.exe" --installed-bin-dir="C:\vcpkg\installed\x64-windows\bin" --tlog-file="Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" --copied-files-log="Debug\vcpkg.applocal.log"
+  "C:\vcpkg\vcpkg.exe" z-applocal --target-binary="C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.exe" --installed-bin-dir="C:\vcpkg\installed\x64-windows\bin" --tlog-file="Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" --copied-files-log="Debug\vcpkg.applocal.log"
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -605,13 +605,13 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Done Building Project "C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+Done Building Project "C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.31
+Time Elapsed 00:00:01.56
 "
 CMAKE_CXX_COMPILER_RANLIB ""
 CMAKE_CXX_COMPILER_VERSION "19.51.36248.0"
@@ -1121,9 +1121,9 @@ CMAKE_C_COMPILER_LOADED "1"
 CMAKE_C_COMPILER_NAMES "cc"
 CMAKE_C_COMPILER_PRODUCED_FILES "CompilerIdC.exe;CompilerIdC.vcxproj"
 CMAKE_C_COMPILER_PRODUCED_OUTPUT "MSBuild version 18.8.2+ce25c0108 for .NET Framework
-Build started 9/11/2026 6:45:07 PM.
+Build started 9/15/2026 6:04:32 PM.
 
-Project "C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+Project "C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -1139,9 +1139,9 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\vcpkg\installed\x64-windows\lib" /LIBPATH:"C:\vcpkg\installed\x64-windows\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.exe
+  CompilerIdC.vcxproj -> C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.exe
 AppLocalFromInstalled:
-  "C:\vcpkg\vcpkg.exe" z-applocal --target-binary="C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.exe" --installed-bin-dir="C:\vcpkg\installed\x64-windows\bin" --tlog-file="Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" --copied-files-log="Debug\vcpkg.applocal.log"
+  "C:\vcpkg\vcpkg.exe" z-applocal --target-binary="C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.exe" --installed-bin-dir="C:\vcpkg\installed\x64-windows\bin" --tlog-file="Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" --copied-files-log="Debug\vcpkg.applocal.log"
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -1149,13 +1149,13 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "C:\Users\porte\Desktop\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+Done Building Project "C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.26
+Time Elapsed 00:00:02.19
 "
 CMAKE_C_COMPILER_RANLIB ""
 CMAKE_C_COMPILER_VERSION "19.51.36248.0"
@@ -1267,7 +1267,7 @@ CMAKE_EXTRA_LINK_EXTENSIONS ".targets"
 CMAKE_FILES_DIRECTORY "/CMakeFiles"
 CMAKE_FIND_LIBRARY_PREFIXES ";lib"
 CMAKE_FIND_LIBRARY_SUFFIXES ".dll.lib;.lib;.a"
-CMAKE_FIND_PACKAGE_REDIRECTS_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation/CMakeFiles/pkgRedirects"
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation/CMakeFiles/pkgRedirects"
 CMAKE_FORCE_WIN64 "TRUE"
 CMAKE_GENERATOR "Visual Studio 18 2026"
 CMAKE_GENERATOR_INSTANCE "C:/Program Files/Microsoft Visual Studio/18/Community"
@@ -1275,7 +1275,7 @@ CMAKE_GENERATOR_NO_COMPILER_ENV "1"
 CMAKE_GENERATOR_PLATFORM ""
 CMAKE_GENERATOR_RC "rc"
 CMAKE_GENERATOR_TOOLSET ""
-CMAKE_HOME_DIRECTORY "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+CMAKE_HOME_DIRECTORY "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 CMAKE_HOST_EXECUTABLE_SUFFIX ".exe"
 CMAKE_HOST_SYSTEM "Windows-10.0.26200"
 CMAKE_HOST_SYSTEM_NAME "Windows"
@@ -1339,7 +1339,7 @@ CMAKE_PATCH_VERSION "2"
 CMAKE_PCH_COPY_COMPILE_PDB "ON"
 CMAKE_PCH_EXTENSION ".pch"
 CMAKE_PCH_PROLOGUE "#pragma system_header"
-CMAKE_PLATFORM_INFO_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation/CMakeFiles/4.4.2"
+CMAKE_PLATFORM_INFO_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation/CMakeFiles/4.4.2"
 CMAKE_PLATFORM_INFO_INITIALIZED "1"
 CMAKE_PROJECT_COMPAT_VERSION ""
 CMAKE_PROJECT_DESCRIPTION ""
@@ -1396,7 +1396,7 @@ CMAKE_SHARED_MODULE_SUFFIX ".dll"
 CMAKE_SIZEOF_VOID_P "8"
 CMAKE_SKIP_INSTALL_RPATH "NO"
 CMAKE_SKIP_RPATH "NO"
-CMAKE_SOURCE_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+CMAKE_SOURCE_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 CMAKE_STATIC_LIBRARY_PREFIX ""
 CMAKE_STATIC_LIBRARY_SUFFIX ".lib"
 CMAKE_STATIC_LINKER_FLAGS ""
@@ -1432,15 +1432,15 @@ CMAKE_VS_TARGET_FRAMEWORK_VERSION "v4.7.2"
 CMAKE_VS_VERSION_BUILD_NUMBER "18.8.12009.203"
 CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION "10.0.26100.0"
 CMAKE_WARN_DEPRECATED "ON"
-DumpInformation_BINARY_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
-DumpInformation_BINARY_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+DumpInformation_BINARY_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
+DumpInformation_BINARY_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 DumpInformation_COMPAT_VERSION ""
 DumpInformation_DESCRIPTION ""
 DumpInformation_HOMEPAGE_URL ""
 DumpInformation_IS_TOP_LEVEL "ON"
 DumpInformation_IS_TOP_LEVEL "ON"
-DumpInformation_SOURCE_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
-DumpInformation_SOURCE_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+DumpInformation_SOURCE_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
+DumpInformation_SOURCE_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 DumpInformation_SPDX_LICENSE ""
 MSVC "1"
 MSVC14 "1"
@@ -1451,15 +1451,15 @@ MSVC_INCREMENTAL_DEFAULT "ON"
 MSVC_INCREMENTAL_YES_FLAG "/INCREMENTAL"
 MSVC_TOOLSET_VERSION "145"
 MSVC_VERSION "1951"
-PROJECT_BINARY_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+PROJECT_BINARY_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 PROJECT_COMPAT_VERSION ""
 PROJECT_DESCRIPTION ""
 PROJECT_HOMEPAGE_URL ""
 PROJECT_IS_TOP_LEVEL "ON"
 PROJECT_NAME "DumpInformation"
-PROJECT_SOURCE_DIR "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation"
+PROJECT_SOURCE_DIR "C:/Club_code/1st-bricked-project/__cmake_systeminformation"
 PROJECT_SPDX_LICENSE ""
-RESULT_FILE "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation/results.txt"
+RESULT_FILE "C:/Club_code/1st-bricked-project/__cmake_systeminformation/results.txt"
 RUN_CONFIGURE "ON"
 SET_MSVC_CXX_ARCHITECTURE_ID "set(MSVC_CXX_ARCHITECTURE_ID x64)"
 SET_MSVC_C_ARCHITECTURE_ID "set(MSVC_C_ARCHITECTURE_ID x64)"
@@ -1504,7 +1504,7 @@ __WINDOWS_MSVC "1"
 __WINDOWS_PATHS_INCLUDED "1"
 _compiler_version "19.51.36248.0"
 fixed_flags " -DWIN32 "
-incl "C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation/This does not exist"
+incl "C:/Club_code/1st-bricked-project/__cmake_systeminformation/This does not exist"
 
 =================================================================
 === COMMANDS
@@ -1733,6 +1733,6 @@ NOTFOUND
 =================================================================
 === OTHER
 =================================================================
-INCLUDE_DIRECTORY: C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation
-INCLUDE_DIRECTORY: C:/Users/porte/Desktop/1st-bricked-project/__cmake_systeminformation
+INCLUDE_DIRECTORY: C:/Club_code/1st-bricked-project/__cmake_systeminformation
+INCLUDE_DIRECTORY: C:/Club_code/1st-bricked-project/__cmake_systeminformation
 INCLUDE_REGULAR_EXPRESSION: ^.*$
