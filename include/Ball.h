@@ -9,7 +9,7 @@ class Ball
 private:
     Vector2 center; // (x,y)
     float   radius;
-    bool inflating{true};
+    bool hasHitWall{false};
 
     Color color;
 

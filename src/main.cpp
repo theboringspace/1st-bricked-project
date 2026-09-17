@@ -2,19 +2,18 @@
 #include "Ball.h"
 #include "CollisionHandler.h"
 
+
+
 int main()
 {
-    const int WINDOW_LENGTH{1280};
-    const int WINDOW_HEIGHT{720};
-
     InitWindow(1280, 720, "Bala Bala Bala Bele Bele Bele");
     SetTargetFPS(GetMonitorRefreshRate(GetCurrentMonitor()));
     float dt{GetFrameTime()};
 
     CollisionHandler collisioner;
-    collisioner.AddBall( {Vector2{WINDOW_LENGTH - 1100, WINDOW_HEIGHT - 100}, 40.0, Vector2{5,5}, WHITE} );
+    collisioner.AddBall( {Vector2{WINDOW_LENGTH - 1100, WINDOW_HEIGHT - 100}, 40.0, Vector2{10,10}, WHITE} );
     collisioner.AddBall( {Vector2{WINDOW_LENGTH / 2.0, WINDOW_HEIGHT / 2.0}, 20.0, Vector2{-6, 4}, RED} );
-    collisioner.AddBall( {Vector2{WINDOW_LENGTH / 2.0, WINDOW_HEIGHT / 2.0}, 50.0, Vector2{5, 2}, BLUE} );
+    collisioner.AddBall( {Vector2{WINDOW_LENGTH / 2.0, WINDOW_HEIGHT / 2.0}, 50.0, Vector2{10, 2}, BLUE} );
     collisioner.AddBall( {Vector2{WINDOW_LENGTH / 2.0, WINDOW_HEIGHT / 2.0}, 10.0, Vector2{-3, 10}, GRAY} );
     collisioner.AddBall( {Vector2{WINDOW_LENGTH / 2.0, WINDOW_HEIGHT / 2.0}, 80.0, Vector2{-1, 2}, GREEN} );
     collisioner.AddBall( {Vector2{WINDOW_LENGTH / 2.0, WINDOW_HEIGHT / 2.0}, 10.0, Vector2{-6, 3}, YELLOW} );
@@ -29,7 +28,7 @@ int main()
     // ball.SetVelocity(Vector2{5, 5});
     // ball2.SetVelocity(Vector2{-6, 3});
 
-    const Vector2 GRAVITY{0, 9.8};
+    const Vector2 GRAVITY{0, 20};
 
 
     while(!WindowShouldClose())

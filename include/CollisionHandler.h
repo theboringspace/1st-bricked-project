@@ -1,13 +1,14 @@
 #pragma once
 
 #include <vector>
-#include <cmath>
+#include "Constants.h"
 #include "Ball.h"
 
 class CollisionHandler
 {
 private:
     std::vector<Ball> balls;
+
 public:
     void AddBall(Ball ball);
 

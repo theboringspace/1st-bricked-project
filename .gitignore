@@ -71,3 +71,6 @@ Testing/
 # Editor Tasks
 .zed/
 .vscode/
+
+# CMake
+__cmake_systeminformation/

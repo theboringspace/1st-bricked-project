@@ -1,4 +1,5 @@
 #include  "Ball.h"
+#include "Constants.h"
 #include <raylib.h>
 
 /**
@@ -37,71 +38,43 @@ Vector2 Ball::GetVelocity()const
 
 void Ball::Update(const Vector2& accel, float dt)
 {
-    if (radius >= 150)
+    hasHitWall =    (velocity.y > 0 && center.y + radius > WINDOW_HEIGHT)   ||
+                    (velocity.y < 0 && center.y - radius < 0)               ||
+                    (velocity.x > 0 && center.x + radius > WINDOW_LENGTH)   ||
+                    (velocity.x < 0 && center.x - radius < 0);
+
+    if (hasHitWall)
     {
-        inflating = false;
-    }
-    if (radius <= 50)
-    {
-        inflating = true;
+        Ball tempBall{*this};
+        velocity = Vector2{0, 0};
+
+        // Bottom bound
+        if (tempBall.velocity.y > 0 && center.y + radius > WINDOW_HEIGHT)
+        {
+            tempBall.velocity = Vector2{tempBall.velocity.x, tempBall.velocity.y * -1};
+        }
+        // Top bound
+        else if (tempBall.velocity.y < 0 && center.y - radius < 0)
+        {
+            tempBall.velocity = Vector2{tempBall.velocity.x, tempBall.velocity.y * -1};
+        }
+        // Right bound
+        else if (tempBall.velocity.x > 0 && center.x + radius > WINDOW_LENGTH)
+        {
+            tempBall.velocity = Vector2{tempBall.velocity.x * -1, tempBall.velocity.y};
+        }
+        // Left bound
+        else if (tempBall.velocity.x < 0 && center.x - radius < 0)
+        {
+            tempBall.velocity = Vector2{tempBall.velocity.x * -1, tempBall.velocity.y};
+        }
+
+        velocity = tempBall.velocity;
+
+        hasHitWall = false;
     }
 
-    // Bottom bound
-    if (velocity.y > 0 && center.y + radius > 720)
-    {
-        velocity = Vector2{velocity.x, velocity.y * -1};
-        if (inflating)
-        {
-            radius += radius * 0.10;
-        }
-        else
-        {
-            radius -= radius * 0.10;
-        }
-        return;
-    }
-    // Top bound
-    if (velocity.y < 0 && center.y - radius < 0)
-    {
-        velocity = Vector2{velocity.x, velocity.y * -1};
-        if (inflating)
-        {
-            radius += radius * 0.10;
-        }
-        else
-        {
-            radius -= radius * 0.10;
-        }
-        return;
-    }
-    // Right bound
-    if (velocity.x > 0 && center.x + radius > 1280)
-    {
-        velocity = Vector2{velocity.x * -1, velocity.y};
-        if (inflating)
-        {
-            radius += radius * 0.10;
-        }
-        else
-        {
-            radius -= radius * 0.10;
-        }
-        return;
-    }
-    // Left bound
-    if (velocity.x < 0 && center.x - radius < 0)
-    {
-        velocity = Vector2{velocity.x * -1, velocity.y};
-        if (inflating)
-        {
-            radius += radius * 0.10;
-        }
-        else
-        {
-            radius -= radius * 0.10;
-        }
-        return;
-    }
+
 
     AddToVelocity(Vector2{ accel.x * dt, accel.y * dt} );
     AddToPosition(Vector2{ velocity.x, velocity.y});

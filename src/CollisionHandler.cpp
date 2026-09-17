@@ -1,4 +1,5 @@
 #include "CollisionHandler.h"
+#include <cmath>
 
 void CollisionHandler::AddBall(Ball ball)
 {
