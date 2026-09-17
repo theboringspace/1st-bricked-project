@@ -577,7 +577,7 @@ CMAKE_CXX_COMPILER_LOADED "1"
 CMAKE_CXX_COMPILER_NAMES "c++"
 CMAKE_CXX_COMPILER_PRODUCED_FILES "CompilerIdCXX.exe;CompilerIdCXX.vcxproj"
 CMAKE_CXX_COMPILER_PRODUCED_OUTPUT "MSBuild version 18.8.2+ce25c0108 for .NET Framework
-Build started 9/16/2026 10:56:38 PM.
+Build started 9/16/2026 11:03:10 PM.
 
 Project "C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
@@ -611,7 +611,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.54
+Time Elapsed 00:00:00.55
 "
 CMAKE_CXX_COMPILER_RANLIB ""
 CMAKE_CXX_COMPILER_VERSION "19.51.36248.0"
@@ -1121,7 +1121,7 @@ CMAKE_C_COMPILER_LOADED "1"
 CMAKE_C_COMPILER_NAMES "cc"
 CMAKE_C_COMPILER_PRODUCED_FILES "CompilerIdC.exe;CompilerIdC.vcxproj"
 CMAKE_C_COMPILER_PRODUCED_OUTPUT "MSBuild version 18.8.2+ce25c0108 for .NET Framework
-Build started 9/16/2026 10:56:37 PM.
+Build started 9/16/2026 11:03:09 PM.
 
 Project "C:\Club_code\1st-bricked-project\__cmake_systeminformation\CMakeFiles\4.4.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
@@ -1155,7 +1155,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.83
+Time Elapsed 00:00:00.70
 "
 CMAKE_C_COMPILER_RANLIB ""
 CMAKE_C_COMPILER_VERSION "19.51.36248.0"

@@ -2,11 +2,13 @@
 #include "Constants.h"
 #include <raylib.h>
 
+
 /**
  * CLASS Ball DEFINITION
  */
 Ball::Ball(Vector2 c, float r, Vector2 v, Color col)
-:   center(c), radius(r), velocity(v), color(col)
+:   center(c), radius(r), velocity(v), color(col),
+    weapon(Vector2{center}, radius / 2.0f, radius * 1.5f)
 {
 }
 
@@ -38,6 +40,9 @@ Vector2 Ball::GetVelocity()const
 
 void Ball::Update(float deltaTime)
 {
+    weapon.SetCenterOfRotation(center);
+    weapon.Update(deltaTime);
+
     hasHitWall =    (velocity.y > 0 && center.y + radius > WINDOW_HEIGHT)   ||
                     (velocity.y < 0 && center.y - radius < 0)               ||
                     (velocity.x > 0 && center.x + radius > WINDOW_LENGTH)   ||
@@ -79,9 +84,10 @@ void Ball::Update(float deltaTime)
     AddToPosition(Vector2{ velocity.x * deltaTime, velocity.y * deltaTime});
 }
 
-void Ball::Draw()const
+void Ball::Draw()
 {
     DrawCircle(center.x, center.y, radius, color);
+    weapon.Draw();
 }
 /**
  * END CLASS Ball DEFINITION

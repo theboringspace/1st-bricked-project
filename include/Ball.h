@@ -2,6 +2,8 @@
 
 #include <raylib.h>
 
+#include "BallWeapon.h"
+
 /**
  * CLASS Ball DECLARATION
  */
@@ -15,6 +17,8 @@ private:
     Color color;
 
     Vector2 velocity{0, 0};
+
+    BallWeapon weapon;
 public:
     Ball(Vector2 c, float r, Vector2 v, Color col);
 
@@ -29,7 +33,7 @@ public:
 
     // TO CHANGE
     void Update(float deltaTime);
-    void Draw()const;
+    void Draw();
 };
 /**
  * END CLASS Ball DECLARATION
