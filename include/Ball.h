@@ -1,4 +1,5 @@
 #pragma once
+
 #include <raylib.h>
 
 /**
@@ -27,7 +28,7 @@ public:
     void SetVelocity(Vector2 vel);
 
     // TO CHANGE
-    void Update(const Vector2& accel, float dt);
+    void Update(float deltaTime);
     void Draw()const;
 };
 /**

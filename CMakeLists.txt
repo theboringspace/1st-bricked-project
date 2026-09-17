@@ -127,7 +127,9 @@ endif()
 add_executable(RaylibTemplate
   src/main.cpp
   src/Ball.cpp
-  src/CollisionHandler.cpp)
+  src/CollisionHandler.cpp
+  src/World.cpp
+  src/BallWeapon.cpp)
 #add_executable(RaylibTemplate "reference/01.cpp")
 #add_executable(RaylibTemplate "reference/02.cpp")
 #add_executable(RaylibTemplate "reference/03.cpp")

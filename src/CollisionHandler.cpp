@@ -1,20 +1,9 @@
 #include "CollisionHandler.h"
 #include <cmath>
 
-void CollisionHandler::AddBall(Ball ball)
+void CollisionHandler::Update(std::vector<Ball>& balls, float deltaTime)
 {
-    balls.push_back(ball);
-}
-
-
-void CollisionHandler::Update(const Vector2 accel, float dt)
-{
-    for (size_t i{}; i < balls.size(); ++i)
-    {
-        balls.at(i).Update(accel, dt);
-    }
-
-    for (size_t i{}; i < balls.size(); ++i)
+    for (size_t i{0}; i < balls.size(); ++i)
     {
         for (size_t j{i + 1}; j < balls.size(); ++j)
         {
@@ -49,12 +38,4 @@ void CollisionHandler::ApplyCollision(Ball& ball1, Ball& ball2)const
 float CollisionHandler::GetDistance(const Ball& ball1, const Ball& ball2)const
 {
     return std::sqrt( std::pow((ball2.GetCenter().x - ball1.GetCenter().x), 2) + std::pow((ball2.GetCenter().y - ball1.GetCenter().y), 2) );
-}
-
-void CollisionHandler::Draw()
-{
-    for (size_t i{}; i < balls.size(); ++i)
-    {
-        balls.at(i).Draw();
-    }
 }

@@ -36,7 +36,7 @@ Vector2 Ball::GetVelocity()const
     return velocity;
 }
 
-void Ball::Update(const Vector2& accel, float dt)
+void Ball::Update(float deltaTime)
 {
     hasHitWall =    (velocity.y > 0 && center.y + radius > WINDOW_HEIGHT)   ||
                     (velocity.y < 0 && center.y - radius < 0)               ||
@@ -49,22 +49,22 @@ void Ball::Update(const Vector2& accel, float dt)
         velocity = Vector2{0, 0};
 
         // Bottom bound
-        if (tempBall.velocity.y > 0 && center.y + radius > WINDOW_HEIGHT)
+        if (tempBall.velocity.y > 0 && tempBall.center.y + radius >= WINDOW_HEIGHT)
         {
             tempBall.velocity = Vector2{tempBall.velocity.x, tempBall.velocity.y * -1};
         }
         // Top bound
-        else if (tempBall.velocity.y < 0 && center.y - radius < 0)
+        else if (tempBall.velocity.y < 0 && tempBall.center.y - radius <= 0)
         {
             tempBall.velocity = Vector2{tempBall.velocity.x, tempBall.velocity.y * -1};
         }
         // Right bound
-        else if (tempBall.velocity.x > 0 && center.x + radius > WINDOW_LENGTH)
+        else if (tempBall.velocity.x > 0 && tempBall.center.x + radius >= WINDOW_LENGTH)
         {
             tempBall.velocity = Vector2{tempBall.velocity.x * -1, tempBall.velocity.y};
         }
         // Left bound
-        else if (tempBall.velocity.x < 0 && center.x - radius < 0)
+        else if (tempBall.velocity.x < 0 && tempBall.center.x - radius <= 0)
         {
             tempBall.velocity = Vector2{tempBall.velocity.x * -1, tempBall.velocity.y};
         }
@@ -72,12 +72,11 @@ void Ball::Update(const Vector2& accel, float dt)
         velocity = tempBall.velocity;
 
         hasHitWall = false;
+
+        return;
     }
 
-
-
-    AddToVelocity(Vector2{ accel.x * dt, accel.y * dt} );
-    AddToPosition(Vector2{ velocity.x, velocity.y});
+    AddToPosition(Vector2{ velocity.x * deltaTime, velocity.y * deltaTime});
 }
 
 void Ball::Draw()const
